@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistory, useParams, Link } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { useRoom } from '../hooks/useRoom'; 
 
 import logoImg from "../assets/images/logo.svg";
@@ -13,7 +13,7 @@ import { Question } from "../components/Question";
 import { database } from "../services/firebase";
 
 import "../style/room.scss";
-import { useAuth } from "../hooks/useAuth";
+// import { useAuth } from "../hooks/useAuth";
 import { Modal } from '../components/Modal';
 
 
@@ -25,7 +25,7 @@ type RoomParams = {
 };
 
 export function AdminRoom() {
-  const { user } = useAuth();
+  // const { user } = useAuth();
 
   const [endRoomModal, setRoomEndModal] = useState(false);
   const [deleteQuestionModal, setDeleteQuestionModal] = useState(false);
@@ -35,7 +35,7 @@ export function AdminRoom() {
   
   const roomId = params.id;
 
-  const {title, questions} = useRoom(roomId)
+  const {title, questions} = useRoom(roomId);
 
   async function handleCheckQuestionAsAnswered(questionId: string){
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({

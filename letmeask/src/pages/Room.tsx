@@ -1,4 +1,4 @@
-import { useParams, useHistory, Link } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { useState, FormEvent} from "react";
 
 import { useRoom } from "../hooks/useRoom";
