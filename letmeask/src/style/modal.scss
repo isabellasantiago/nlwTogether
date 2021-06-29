@@ -75,3 +75,21 @@
         }
     }
 }
+
+@media (max-width: 550px){
+    .modal-overlay{
+        .modal{
+            padding: 10px;
+            max-width: 370px;
+            max-height: 250px;
+
+            span{
+                text-align: center;
+            }
+
+            div{
+                gap: 10px;
+            }
+        }
+    }
+}

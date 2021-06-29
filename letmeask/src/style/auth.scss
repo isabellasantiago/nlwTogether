@@ -178,19 +178,14 @@
     }
   }
 
-
   @media (max-width: 550px){
     #page-auth{
       display: flex;
       align-items: center;
-      
+      justify-content: center;
 
       aside{
         display: none;
-      }
-
-      main{
-        margin: auto 0;
       }
     }
   }

@@ -1,4 +1,5 @@
-.room-code {
+@media (max-width:2890px) {
+  .room-code {
   height: 40px;
   border-radius: 8px;
   overflow: hidden;
@@ -15,8 +16,8 @@
     padding: 0 12px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
   }
 
   span {
@@ -24,8 +25,27 @@
     align-self: center;
     flex: 1;
     padding: 0 16px 0 12px;
-    width: 230px;
+    max-width: 230px;
     font-size: 14px;
     font-weight: 500;
   }
+}
+}
+
+
+@media (max-width: 550px){
+
+  .room-code{
+        box-sizing: border-box;
+        align-items: stretch;
+        max-width:200px;
+         span{
+          font-size: 11px;
+          text-align: center;
+          padding: 0 10px;
+          width: 180px;
+          white-space: wrap;
+        }
+      }
+  
 }
