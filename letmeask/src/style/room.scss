@@ -13,10 +13,12 @@
       justify-content:space-between;
       align-items: center;
 
-
-      > img{
-        max-height: 45px;
+      a{
+        > img{
+          max-height: 45px;
+        }
       }
+      
 
       > div{
         display: flex;
@@ -119,20 +121,31 @@
 }
 
 
-@media(max-width: 550px){
+@media (max-width: 550px){
 
   header{
     padding: 12px;
 
-    .content{
-    display: flex;
-    gap: 16px;
+      .content{
+        display: flex;
+        
+        button{
+          > div{
+            height: 45px;
 
-    > div{
-      display: flex;
-      flex-direction: column;
+            >img{
+              align-self:stretch;
+            }
+          }
+        }
+        > div{
+          display: flex;
+          flex-direction: column;
+          >button:first-of-type{
+            margin-bottom: 8px;
+          }
+        }
     }
-  }
   }
 
   main{
@@ -153,13 +166,26 @@
     }
   }
 
-  .form-footer{
-    gap: 10px;
+  form{
+      .form-footer{
+      display: flex;
+      flex-flow: column wrap;
+        span{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        Button{
+          margin-bottom: 10px;
+        }
+        .user-info{
+          >img{
+            margin-bottom: 10px;
+          }
+        }
 
-    button{
-      padding: 18px;
     }
   }
+  
   
   
 }

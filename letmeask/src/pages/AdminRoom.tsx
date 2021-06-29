@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams, Link } from "react-router-dom";
 import { useRoom } from '../hooks/useRoom'; 
 
 import logoImg from "../assets/images/logo.svg";
@@ -69,7 +69,7 @@ export function AdminRoom() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt="Letmeask logo" />
+          <a href='/'><img src={logoImg} alt="Letmeask logo" /></a>
           <div>
               <RoomCode code={roomId} />
               <Button isOutlined onClick={() => setRoomEndModal(true)}>Encerrar sala</Button>

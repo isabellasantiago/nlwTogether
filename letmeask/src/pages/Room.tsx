@@ -1,8 +1,10 @@
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory, Link } from "react-router-dom";
 import { useState, FormEvent} from "react";
 
 import { useRoom } from "../hooks/useRoom";
 import { useAuth } from "../hooks/useAuth";
+
+
 
 import logoImg from "../assets/images/logo.svg";
 import { Button } from "../components/Button";
@@ -72,7 +74,7 @@ export function Room() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt="Letmeask logo" />
+          <a href='/'><img src={logoImg} alt="Letmeask logo" /></a>
           <RoomCode code={roomId} />
         </div>
       </header>

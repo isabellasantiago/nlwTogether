@@ -94,17 +94,18 @@
 
         footer{
             .user-info{
-                gap: 8px;
+                gap: 10px;
                 span{
                     font-size: 14px;
                     white-space: nowrap;
-                    margin-left: 0;
-                    margin-right: 4px;
+                    margin-left: 5px;
                 }
             }
 
             > div{
-                gap: 8px;
+                button{
+                    margin-right: 5px;
+                }
             }
         }
     }
